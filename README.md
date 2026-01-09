@@ -24,7 +24,7 @@ Inline validation for required fields
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/notes-management-app.git
+git clone https://github.com/ssv23-5085/notes-management-app.git
 
 
 Navigate to the project directory:
