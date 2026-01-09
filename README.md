@@ -60,11 +60,11 @@ http://localhost:5173
 
 2. NoteForm.jsx
 
-  Collects user input
+   Collects user input
 
-  Performs title validation
+   Performs title validation
 
-  Sends note data to parent component
+   Sends note data to parent component
 
 3. NoteList.jsx
 
