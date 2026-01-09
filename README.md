@@ -1,16 +1,122 @@
-# React + Vite
+📝 Notes Management App (React)
+📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Notes Management App is a simple React application that allows users to create, view, and delete notes.
+The goal of this project is to demonstrate React fundamentals, including component-based architecture, state management using hooks, and proper handling of UI states such as loading, empty data, and validation errors.
 
-Currently, two official plugins are available:
+This project was built as part of a technical assessment focusing on clean code, clarity, and correct React practices, rather than advanced UI or external libraries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚙️ Features
 
-## React Compiler
+Add a note with a required title and optional description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+View all added notes in a list
 
-## Expanding the ESLint configuration
+Delete individual notes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Loading state simulation on app start
+
+Empty state message when no notes are present
+
+Inline validation for required fields
+
+🚀 How to Run the Project Locally
+
+Clone the repository:
+
+git clone https://github.com/YOUR_USERNAME/notes-management-app.git
+
+
+Navigate to the project directory:
+
+cd notes-management-app
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+Open the browser and visit:
+
+http://localhost:5173
+
+🧩 Component Breakdown
+
+App.jsx
+
+Root component
+
+Manages global state (notes, isLoading)
+
+Handles add and delete logic
+
+Controls conditional rendering (loading, empty state, list)
+
+NoteForm.jsx
+
+Collects user input
+
+Performs title validation
+
+Sends note data to parent component
+
+NoteList.jsx
+
+Renders list of notes
+
+Passes delete handler to each note
+
+NoteItem.jsx
+
+Displays individual note details
+
+Handles delete action for a single note
+
+Loader.jsx
+
+Displays loading message during initial render
+
+EmptyState.jsx
+
+Displays message when no notes are available
+
+🔄 State Management Explanation
+
+React’s useState hook is used to manage notes and loading state.
+
+All application state is maintained in the App.jsx component.
+
+Child components communicate with the parent using props and callback functions.
+
+This approach ensures a single source of truth and predictable data flow.
+
+🎯 Design Decisions
+
+No external UI or state management libraries were used to keep the project simple and focused.
+
+Inline and basic CSS was applied for clarity and readability.
+
+Fake loading is implemented using useEffect and setTimeout to simulate real-world data fetching.
+
+⚠️ Assumptions & Limitations
+
+Notes are stored in memory and are lost on page refresh.
+
+No backend or database integration is included.
+
+Styling is intentionally minimal as UI polish was not the primary focus of the assessment.
+
+📽️ Demo Video
+
+A short demo video showcasing the application functionality and code explanation is provided separately as part of the submission.
+
+✅ Conclusion
+
+This project demonstrates a clear understanding of React basics, component structure, state management, and UI state handling.
+The focus has been on writing clean, readable, and maintainable code, aligned with real-world frontend development practices.
