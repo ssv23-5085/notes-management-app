@@ -34,12 +34,12 @@ Clone the repository:
 
 4. Install dependencies:
 
-npm install
+   npm install
 
 
 5. Start the development server:
 
-npm run dev
+   npm run dev
 
 
 Open the browser and visit:
@@ -48,43 +48,43 @@ http://localhost:5173
 
 🧩 Component Breakdown
 
-App.jsx
+1. App.jsx
 
-Root component
+   Root component
 
-Manages global state (notes, isLoading)
+   Manages global state (notes, isLoading)
 
-Handles add and delete logic
+   Handles add and delete logic
 
-Controls conditional rendering (loading, empty state, list)
+   Controls conditional rendering (loading, empty state, list)
 
-NoteForm.jsx
+2. NoteForm.jsx
 
-Collects user input
+  Collects user input
 
-Performs title validation
+  Performs title validation
 
-Sends note data to parent component
+  Sends note data to parent component
 
-NoteList.jsx
+3. NoteList.jsx
 
-Renders list of notes
+   Renders list of notes
 
-Passes delete handler to each note
+   Passes delete handler to each note
 
-NoteItem.jsx
+4. NoteItem.jsx
 
-Displays individual note details
+   Displays individual note details
 
-Handles delete action for a single note
+   Handles delete action for a single note
 
-Loader.jsx
+5. Loader.jsx
 
-Displays loading message during initial render
+   Displays loading message during initial render
 
-EmptyState.jsx
+6. EmptyState.jsx
 
-Displays message when no notes are available
+   Displays message when no notes are available
 
 🔄 State Management Explanation
 
@@ -106,11 +106,11 @@ Fake loading is implemented using useEffect and setTimeout to simulate real-worl
 
 ⚠️ Assumptions & Limitations
 
-Notes are stored in memory and are lost on page refresh.
+1. Notes are stored in memory and are lost on page refresh.
 
-No backend or database integration is included.
+2. No backend or database integration is included.
 
-Styling is intentionally minimal as UI polish was not the primary focus of the assessment.
+3. Styling is intentionally minimal as UI polish was not the primary focus of the assessment.
 
 📽️ Demo Video
 
