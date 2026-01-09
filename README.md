@@ -24,20 +24,20 @@ Inline validation for required fields
 
 Clone the repository:
 
-git clone https://github.com/ssv23-5085/notes-management-app.git
+1. git clone https://github.com/ssv23-5085/notes-management-app.git
 
 
-Navigate to the project directory:
+2. Navigate to the project directory:
 
-cd notes-management-app
+3. cd notes-management-app
 
 
-Install dependencies:
+4. Install dependencies:
 
 npm install
 
 
-Start the development server:
+5. Start the development server:
 
 npm run dev
 
